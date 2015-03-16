@@ -7,8 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TheAmazingAudioEngine.h"
+#import "AEPlaythroughChannel.h"
+#import "MyAudioPlayer.h"
+#import "MyAudioReceiver.h"
 
-@interface ViewController : UIViewController
+
+@interface ViewController : UIViewController{
+    AEAudioController *audioController;
+    AEPlaythroughChannel *playThrough;
+    MyAudioPlayer *player;
+    MyAudioReceiver *receiver;
+}
 
 
 @end

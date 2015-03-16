@@ -12,8 +12,8 @@
 @implementation MyAudioPlayer
 
 -(instancetype)init{
-    TPCircularBufferInit(&_cbuffer, 16384);
-    
+//    TPCircularBufferInit(&_cbuffer, 16384);
+    TPCircularBufferInit(&_cbuffer, 11520*2);
     return self;
 }
 
@@ -63,6 +63,7 @@ static OSStatus renderCallback(__unsafe_unretained MyAudioPlayer *THIS,
 -(void)addToBufferWithoutTimeStampAudioBufferList:(AudioBufferList *)abl{
     TPCircularBufferCopyAudioBufferList(&_cbuffer, abl, NULL, kTPCircularBufferCopyAll, NULL);
 }
-
-
+-(bool)addToBufferPCMData:(NSData*)pcmData{
+    return TPCircularBufferProduceBytes(&_cbuffer, pcmData.bytes, (int32_t)pcmData.length);
+}
 @end

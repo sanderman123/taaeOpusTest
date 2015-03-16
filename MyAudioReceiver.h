@@ -7,7 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <TheAmazingAudioEngine.h>
+#import "MyAudioPlayer.h"
+#import "OpusKit.h"
 
-@interface MyAudioReceiver : NSObject
+@interface MyAudioReceiver : NSObject<AEAudioReceiver>{
+    OKEncoder *opusEncoder;
+    OKDecoder *opusDecoder;
+}
+
+@property (nonatomic, strong) MyAudioPlayer* player;
+@property (nonatomic,strong) AEAudioController* audioController;
+
+-(instancetype)initWithPlayer:(MyAudioPlayer*) player AudioController:(AEAudioController*) audioController;
+
 
 @end

@@ -70,7 +70,7 @@ static const int kNumberOfSamplesPerChannel = 5760;
     dispatch_async(self.processingQueue, ^{
         int32_t decodedSamples = 0;
         
-        int returnValue = opus_decode(_decoder, [packetData bytes], packetData.length, _outputBuffer, kNumberOfSamplesPerChannel, _forwardErrorCorrection);
+        int returnValue = opus_decode(_decoder, [packetData bytes], (opus_int32)packetData.length, _outputBuffer, kNumberOfSamplesPerChannel, _forwardErrorCorrection);
         if (returnValue < 0) {
             NSError *error = [OKUtilities errorForOpusErrorCode:returnValue];
             completionBlock(nil, 0, error);
@@ -80,6 +80,7 @@ static const int kNumberOfSamplesPerChannel = 5760;
         
         NSUInteger length = decodedSamples * sizeof(opus_int16) * self.numberOfChannels;
         NSData *pcmData = [NSData dataWithBytes:_outputBuffer length:length];
+        
         completionBlock(pcmData, decodedSamples, nil);
     });
 }

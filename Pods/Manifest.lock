@@ -1,0 +1,15 @@
+PODS:
+  - libopus (1.1):
+    - libopus/float (= 1.1)
+  - libopus/float (1.1)
+  - TheAmazingAudioEngine (1.4.6)
+
+DEPENDENCIES:
+  - libopus (~> 1.1)
+  - TheAmazingAudioEngine (~> 1.4.6)
+
+SPEC CHECKSUMS:
+  libopus: 0a4c44b1dbad6e7f37d47c47b17d4170897c368b
+  TheAmazingAudioEngine: d4c027506d6b8b025c5947fb401a972ccf7574f3
+
+COCOAPODS: 0.36.0

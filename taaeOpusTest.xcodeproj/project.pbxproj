@@ -14,6 +14,15 @@
 		C59D9A171AB6C67E0005180F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C59D9A161AB6C67E0005180F /* Images.xcassets */; };
 		C59D9A1A1AB6C67E0005180F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C59D9A181AB6C67E0005180F /* LaunchScreen.xib */; };
 		C59D9A261AB6C67E0005180F /* taaeOpusTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C59D9A251AB6C67E0005180F /* taaeOpusTestTests.m */; };
+		C59D9A311AB6C8420005180F /* MyAudioPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = C59D9A301AB6C8420005180F /* MyAudioPlayer.mm */; };
+		C59D9A341AB6CA030005180F /* MyAudioReceiver.mm in Sources */ = {isa = PBXBuildFile; fileRef = C59D9A331AB6CA030005180F /* MyAudioReceiver.mm */; };
+		C59D9A421AB6CEE50005180F /* OKCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = C59D9A371AB6CEE50005180F /* OKCodec.m */; };
+		C59D9A431AB6CEE50005180F /* OKDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = C59D9A391AB6CEE50005180F /* OKDecoder.m */; };
+		C59D9A441AB6CEE50005180F /* OKEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = C59D9A3B1AB6CEE50005180F /* OKEncoder.m */; };
+		C59D9A451AB6CEE50005180F /* OKPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = C59D9A3D1AB6CEE50005180F /* OKPacket.m */; };
+		C59D9A461AB6CEE50005180F /* OKUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C59D9A3F1AB6CEE50005180F /* OKUtilities.m */; };
+		C59D9A471AB6CEE50005180F /* OpusKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C59D9A411AB6CEE50005180F /* OpusKit.m */; };
+		FC51451E8A7C81BF0EA775EE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B35E18F4FE7E45AAA330B8 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		534122C48537833F01CB4BD4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		80B35E18F4FE7E45AAA330B8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		90208B83CC06508277871C3E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C59D9A061AB6C67E0005180F /* taaeOpusTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taaeOpusTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59D9A0A1AB6C67E0005180F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C59D9A0B1AB6C67E0005180F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +52,22 @@
 		C59D9A1F1AB6C67E0005180F /* taaeOpusTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = taaeOpusTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C59D9A241AB6C67E0005180F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C59D9A251AB6C67E0005180F /* taaeOpusTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = taaeOpusTestTests.m; sourceTree = "<group>"; };
+		C59D9A2F1AB6C8420005180F /* MyAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAudioPlayer.h; sourceTree = "<group>"; };
+		C59D9A301AB6C8420005180F /* MyAudioPlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyAudioPlayer.mm; sourceTree = "<group>"; };
+		C59D9A321AB6CA030005180F /* MyAudioReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyAudioReceiver.h; path = ../MyAudioReceiver.h; sourceTree = "<group>"; };
+		C59D9A331AB6CA030005180F /* MyAudioReceiver.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = MyAudioReceiver.mm; path = ../MyAudioReceiver.mm; sourceTree = "<group>"; };
+		C59D9A361AB6CEE50005180F /* OKCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKCodec.h; sourceTree = "<group>"; };
+		C59D9A371AB6CEE50005180F /* OKCodec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKCodec.m; sourceTree = "<group>"; };
+		C59D9A381AB6CEE50005180F /* OKDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKDecoder.h; sourceTree = "<group>"; };
+		C59D9A391AB6CEE50005180F /* OKDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKDecoder.m; sourceTree = "<group>"; };
+		C59D9A3A1AB6CEE50005180F /* OKEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKEncoder.h; sourceTree = "<group>"; };
+		C59D9A3B1AB6CEE50005180F /* OKEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKEncoder.m; sourceTree = "<group>"; };
+		C59D9A3C1AB6CEE50005180F /* OKPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKPacket.h; sourceTree = "<group>"; };
+		C59D9A3D1AB6CEE50005180F /* OKPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKPacket.m; sourceTree = "<group>"; };
+		C59D9A3E1AB6CEE50005180F /* OKUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKUtilities.h; sourceTree = "<group>"; };
+		C59D9A3F1AB6CEE50005180F /* OKUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKUtilities.m; sourceTree = "<group>"; };
+		C59D9A401AB6CEE50005180F /* OpusKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpusKit.h; sourceTree = "<group>"; };
+		C59D9A411AB6CEE50005180F /* OpusKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpusKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC51451E8A7C81BF0EA775EE /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +89,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A34DD5070B9AF9403CFCA3A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80B35E18F4FE7E45AAA330B8 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C59D99FD1AB6C67E0005180F = {
 			isa = PBXGroup;
 			children = (
+				C59D9A351AB6CEE50005180F /* OpusKit */,
 				C59D9A081AB6C67E0005180F /* taaeOpusTest */,
 				C59D9A221AB6C67E0005180F /* taaeOpusTestTests */,
 				C59D9A071AB6C67E0005180F /* Products */,
+				C7CBE5D0CBEE3599CF8C73C0 /* Pods */,
+				A34DD5070B9AF9403CFCA3A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +121,10 @@
 		C59D9A081AB6C67E0005180F /* taaeOpusTest */ = {
 			isa = PBXGroup;
 			children = (
+				C59D9A321AB6CA030005180F /* MyAudioReceiver.h */,
+				C59D9A331AB6CA030005180F /* MyAudioReceiver.mm */,
+				C59D9A2F1AB6C8420005180F /* MyAudioPlayer.h */,
+				C59D9A301AB6C8420005180F /* MyAudioPlayer.mm */,
 				C59D9A0D1AB6C67E0005180F /* AppDelegate.h */,
 				C59D9A0E1AB6C67E0005180F /* AppDelegate.m */,
 				C59D9A101AB6C67E0005180F /* ViewController.h */,
@@ -119,6 +163,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C59D9A351AB6CEE50005180F /* OpusKit */ = {
+			isa = PBXGroup;
+			children = (
+				C59D9A361AB6CEE50005180F /* OKCodec.h */,
+				C59D9A371AB6CEE50005180F /* OKCodec.m */,
+				C59D9A381AB6CEE50005180F /* OKDecoder.h */,
+				C59D9A391AB6CEE50005180F /* OKDecoder.m */,
+				C59D9A3A1AB6CEE50005180F /* OKEncoder.h */,
+				C59D9A3B1AB6CEE50005180F /* OKEncoder.m */,
+				C59D9A3C1AB6CEE50005180F /* OKPacket.h */,
+				C59D9A3D1AB6CEE50005180F /* OKPacket.m */,
+				C59D9A3E1AB6CEE50005180F /* OKUtilities.h */,
+				C59D9A3F1AB6CEE50005180F /* OKUtilities.m */,
+				C59D9A401AB6CEE50005180F /* OpusKit.h */,
+				C59D9A411AB6CEE50005180F /* OpusKit.m */,
+			);
+			path = OpusKit;
+			sourceTree = "<group>";
+		};
+		C7CBE5D0CBEE3599CF8C73C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				534122C48537833F01CB4BD4 /* Pods.debug.xcconfig */,
+				90208B83CC06508277871C3E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C59D9A291AB6C67E0005180F /* Build configuration list for PBXNativeTarget "taaeOpusTest" */;
 			buildPhases = (
+				57D5134DC701B68C8DB23E1F /* Check Pods Manifest.lock */,
 				C59D9A021AB6C67E0005180F /* Sources */,
 				C59D9A031AB6C67E0005180F /* Frameworks */,
 				C59D9A041AB6C67E0005180F /* Resources */,
+				D3739D72D1660D0F30F6FC17 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,13 +288,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		57D5134DC701B68C8DB23E1F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D3739D72D1660D0F30F6FC17 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C59D9A021AB6C67E0005180F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C59D9A441AB6CEE50005180F /* OKEncoder.m in Sources */,
+				C59D9A471AB6CEE50005180F /* OpusKit.m in Sources */,
+				C59D9A431AB6CEE50005180F /* OKDecoder.m in Sources */,
+				C59D9A421AB6CEE50005180F /* OKCodec.m in Sources */,
 				C59D9A121AB6C67E0005180F /* ViewController.m in Sources */,
+				C59D9A341AB6CA030005180F /* MyAudioReceiver.mm in Sources */,
+				C59D9A311AB6C8420005180F /* MyAudioPlayer.mm in Sources */,
 				C59D9A0F1AB6C67E0005180F /* AppDelegate.m in Sources */,
+				C59D9A451AB6CEE50005180F /* OKPacket.m in Sources */,
+				C59D9A461AB6CEE50005180F /* OKUtilities.m in Sources */,
 				C59D9A0C1AB6C67E0005180F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +456,7 @@
 		};
 		C59D9A2A1AB6C67E0005180F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 534122C48537833F01CB4BD4 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = taaeOpusTest/Info.plist;
@@ -351,6 +467,7 @@
 		};
 		C59D9A2B1AB6C67E0005180F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90208B83CC06508277871C3E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = taaeOpusTest/Info.plist;
@@ -412,6 +529,7 @@
 				C59D9A2B1AB6C67E0005180F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C59D9A2C1AB6C67E0005180F /* Build configuration list for PBXNativeTarget "taaeOpusTestTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +538,7 @@
 				C59D9A2E1AB6C67E0005180F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
